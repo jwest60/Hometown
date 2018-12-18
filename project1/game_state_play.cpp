@@ -2,13 +2,10 @@
 
 #include <iostream>
 
-Game_State_Play::Game_State_Play(Game* game)
-{
-	this->game = game;
-}
-
 void Game_State_Play::draw(const float dt)
 {
+	this->game->window.draw(player);
+
 	return;
 }
 
@@ -17,7 +14,7 @@ void Game_State_Play::update(const float dt)
 	return;
 }
 
-void Game_State_Play::handle_input()
+void Game_State_Play::handle_input(const float dt)
 {
 	sf::Event event;
 
@@ -32,4 +29,19 @@ void Game_State_Play::handle_input()
 			break;
 		}
 	}
+
+	player.get_input(dt);
+}
+
+void Game_State_Play::load_textures()
+{
+	this->tex_mgr.create_texture("player", "res/character.png");
+	this->tex_mgr.create_sprites_from_atlas("res/character_atlas.json");
+}
+
+Game_State_Play::Game_State_Play(Game* game)
+{
+	this->game = game;
+	this->load_textures();
+	this->player.sprite.setTexture(this->tex_mgr.get_texture("player"));
 }

@@ -1,5 +1,6 @@
 #include "game.h"
 #include "game_state.h"
+#include <iostream>
 
 void Game::push_state(Game_State* state)
 {
@@ -33,13 +34,13 @@ void Game::game_loop()
 {
 	sf::Clock clock;
 
-	float dt = clock.restart().asMilliseconds();
-
 	while (this->window.isOpen())
 	{
+		float dt = clock.restart().asSeconds();
+
 		if (this->peek_state() == nullptr) continue;
 
-		this->peek_state()->handle_input();
+		this->peek_state()->handle_input(dt);
 		this->peek_state()->update(dt);
 		this->window.clear(sf::Color::Black);
 		this->peek_state()->draw(dt);
@@ -50,6 +51,7 @@ void Game::game_loop()
 Game::Game()
 {
 	this->window.create(sf::VideoMode(800, 600), "Game");
+	this->window.setFramerateLimit(60);
 }
 
 Game::~Game()

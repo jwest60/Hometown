@@ -9,14 +9,12 @@ class Texture_Manager
 public:
 	// create a texture from a file
 	void create_texture(const std::string name, const std::string file_name);
-	sf::Texture* get_texture(const std::string name);
+	sf::Texture& get_texture(const std::string name);
 	void remove_texture(const std::string name);
 
-	Texture_Manager() {}
-	~Texture_Manager();
+	Texture_Manager();
 
 private:
 
-	std::map<std::string, sf::Texture*> textures;
-
+	std::map<std::string, sf::Texture&> textures;
 };
