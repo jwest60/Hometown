@@ -35,7 +35,7 @@ void Animation_Handler::create_animations(const sf::Sprite& sprite, const std::s
 
 		Animation anim(rect, name, 10);
 
-		animations[it.key] = anim;
+		animations[it.key()] = anim;
 	}
 
 	return;

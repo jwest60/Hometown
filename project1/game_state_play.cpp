@@ -36,7 +36,6 @@ void Game_State_Play::handle_input(const float dt)
 void Game_State_Play::load_textures()
 {
 	this->tex_mgr.create_texture("player", "res/character.png");
-	this->tex_mgr.create_sprites_from_atlas("res/character_atlas.json");
 }
 
 Game_State_Play::Game_State_Play(Game* game)

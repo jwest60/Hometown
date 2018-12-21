@@ -21,16 +21,16 @@ void Player::update_sprite(int h_move, int v_move)
 {
 	// moving right
 	if (h_move == 1)
-		this->anim_handler.set_anim("right");
+		this->anim_handler.set_animation("right");
 	// moving left
 	if (h_move == -1)
-		this->anim_handler.set_anim("left");
+		this->anim_handler.set_animation("left");
 	// moving down
 	if (v_move == 1)
-		this->anim_handler.set_anim("down");
+		this->anim_handler.set_animation("down");
 	// moving up
 	if (v_move == -1)
-		this->anim_handler.set_anim("up");
+		this->anim_handler.set_animation("up");
 
 	this->set_sprite(this->frame);
 }

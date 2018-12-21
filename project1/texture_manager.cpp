@@ -52,29 +52,3 @@ void Texture_Manager::remove_texture(std::string name)
 		std::cerr << "warning: failed to remove texture because texture does not exist: " << name << std::endl;
 	}
 }
-
-/*
-
-bool json_validate(json& j, const std::string& atlas_name)
-{
-	for (json::iterator sprite_iterator = j.begin(); sprite_iterator != j.end(); ++sprite_iterator)
-	{
-		if ((*sprite_iterator).find("height") == (*sprite_iterator).end()) { print_error(atlas_name, ); return false; };
-		if ((*sprite_iterator).find("width")  == (*sprite_iterator).end()) return false;
-		if ((*sprite_iterator).find("left")   == (*sprite_iterator).end()) return false;
-		if ((*sprite_iterator).find("top")    == (*sprite_iterator).end()) return false;
-	}
-
-	return true;
-}
-
-void print_error(const std::string& atlas_name, const std::string& sprite_name, const std::string& prop)
-{
-	std::cerr << "ERROR: Atlas " << atlas_name << ", " 
-		<< sprite_name << "does not contain required property " 
-		<< prop << std::endl;
-
-	return;
-}
-
-*/
