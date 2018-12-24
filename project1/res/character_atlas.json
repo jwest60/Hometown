@@ -1,32 +1,38 @@
 {
-  "texture": "character",
-
-  "down": {
-    "type": "animation",
-    "width": 64,
-    "height": 32,
-    "left": 0,
-    "top": 0
-  },
-  "right": {
-    "type": "animation",
-    "width": 64,
-    "height": 32,
-    "left": 0,
-    "top": 32
-  },
-  "up": {
-    "type": "animation",
-    "width": 64,
-    "height": 32,
-    "left": 0,
-    "top": 64
-  },
-  "right": {
-    "type": "animation",
-    "width": 64,
-    "height": 32,
-    "left": 0,
-    "top": 96
-  }
+    "down": {
+        "type": "animation",
+        "width": 64,
+        "height": 32,
+        "left": 0,
+        "top": 0,
+        "frames": 4,
+        "duration": 10
+    },
+    "right": {
+        "type": "animation",
+        "width": 64,
+        "height": 32,
+        "left": 0,
+        "top": 32,
+        "frames": 4,
+        "duration": 10
+    },
+    "up": {
+        "type": "animation",
+        "width": 64,
+        "height": 32,
+        "left": 0,
+        "top": 64,
+        "frames": 4,
+        "duration": 10
+    },
+    "left": {
+        "type": "animation",
+        "width": 64,
+        "height": 32,
+        "left": 0,
+        "top": 96,
+        "frames": 4,
+        "duration": 10
+    }
 }

@@ -14,5 +14,7 @@ public:
 	virtual void draw(const float dt);
 	virtual void update(const float dt);
 	virtual void handle_input(const float dt);
-	virtual void load_textures();
+	
+	void load_textures();
+	void set_textures();
 };

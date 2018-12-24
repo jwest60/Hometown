@@ -8,7 +8,8 @@ struct Animation
 {
 	Animation() : frames(0), duration(0) {}
 
-	Animation(sf::IntRect strip, std::string name, float duration) : strip(strip), name(name), duration(duration) {}
+	Animation(sf::IntRect strip, const std::string& name, unsigned int frames, float duration) 
+		: strip(strip), name(name), frames(frames), duration(duration) {}
 
 	sf::IntRect strip;
 
@@ -16,9 +17,8 @@ struct Animation
 	std::string name;
 
 	// number of frames in the strip
-	int frames;
+	unsigned int frames;
 
-	// the number of frames each animation plays for
 	float duration;
 };
 
