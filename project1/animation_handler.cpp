@@ -95,5 +95,9 @@ sf::IntRect& Animation_Handler::get_current_frame()
 }
 
 void Animation_Handler::play() { playing = true; }
-void Animation_Handler::stop() { playing = false;  }
+void Animation_Handler::stop()
+{
+	this->current_frame.left = 0;
+	playing = false;
+}
 

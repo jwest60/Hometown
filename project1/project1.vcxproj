@@ -156,18 +156,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="animation_handler.cpp" />
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_state_play.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="player.cpp" />
+    <ClCompile Include="entity.cpp" />
     <ClCompile Include="texture_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation.h" />
     <ClInclude Include="animation_handler.h" />
+    <ClInclude Include="camera.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="game_state_play.h" />
+    <ClInclude Include="entity.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="texture_manager.h" />
   </ItemGroup>
