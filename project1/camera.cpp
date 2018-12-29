@@ -17,7 +17,6 @@ void Camera::set_size(const sf::Vector2f& size)
 void Camera::update(const float dt)
 {
 	sf::Vector2f center = this->target->get_center();
-	std::cout << center.x << ", " << center.y << std::endl;
 
 	this->camera.setCenter(center);
 }

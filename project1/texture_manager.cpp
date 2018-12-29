@@ -1,14 +1,13 @@
-#include "texture_manager.h"
-
 #include <iostream>
 
+#include "texture_manager.h"
 
 Texture_Manager::Texture_Manager()
 {
 	this->create_texture("undefined", "res/undefined.png");
 }
 
-void Texture_Manager::create_texture(const std::string name, const std::string file_name)
+void Texture_Manager::create_texture(const std::string& name, const std::string& file_name)
 {
 	sf::Texture texture;
 	if (!texture.loadFromFile(file_name)) { std::cerr << "warning: could not find file " << file_name << std::endl; return; }
@@ -16,7 +15,7 @@ void Texture_Manager::create_texture(const std::string name, const std::string f
 	this->textures[name] = texture;
 }
 
-sf::Texture& Texture_Manager::get_texture(std::string name)
+sf::Texture& Texture_Manager::get_texture(const std::string& name)
 {
 	try
 	{
@@ -39,7 +38,7 @@ sf::Texture& Texture_Manager::get_texture(std::string name)
 	exit(EXIT_FAILURE);
 }
 
-void Texture_Manager::remove_texture(std::string name)
+void Texture_Manager::remove_texture(const std::string& name)
 {
 	if (name == "undefined") return;
 
