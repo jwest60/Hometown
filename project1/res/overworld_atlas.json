@@ -1,0 +1,9 @@
+{
+    "grass": {
+        "type": "texture",
+        "top": 0,
+        "left": 0,
+        "size": 16,
+        "solid":  true
+    }
+}

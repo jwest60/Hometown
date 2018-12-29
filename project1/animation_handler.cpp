@@ -20,8 +20,6 @@ Animation_Handler::Animation_Handler(sf::Texture& sheet, const std::string& atla
 // split a spritesheet into animations
 void Animation_Handler::create_animations(const sf::Texture& sprite, const std::string& atlas_name)
 {
-	std::map<std::string, sf::IntRect> sprites;
-
 	std::ifstream i;
 	json j;
 	i.open(atlas_name);

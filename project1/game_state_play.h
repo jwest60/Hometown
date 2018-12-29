@@ -3,6 +3,8 @@
 #include "game_state.h"
 #include "player.h"
 #include "camera.h"
+#include "tile_manager.h"
+#include "map.h"
 
 class Game_State_Play : public Game_State
 {
@@ -20,4 +22,8 @@ public:
 	
 	void load_textures();
 	void set_textures();
+
+private:
+
+	Map map;
 };
