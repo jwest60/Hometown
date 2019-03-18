@@ -1,9 +1,17 @@
 {
-    "grass": {
-        "type": "texture",
-        "top": 0,
-        "left": 0,
-        "size": 16,
-        "solid":  true
-    }
+  "grass": {
+    "type": "texture",
+    "top": 0,
+    "left": 0,
+    "size": 16,
+    "solid": false
+  },
+
+  "rock": {
+    "type": "texture",
+    "top": 80,
+    "left": 112,
+    "size": 16,
+    "solid": true
+  }
 }

@@ -65,5 +65,5 @@ Game_State_Play::Game_State_Play(Game* game) : map(20, 20, 16)
 	this->game->window.setView(this->camera.get_view());
 
 	this->map.create_tiles(this->tex_mgr.get_texture("overworld"), "res/overworld_atlas.json");
-	this->map.create();
+	this->map.generate();
 }

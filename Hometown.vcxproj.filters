@@ -11,91 +11,89 @@
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="project1\animation_handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="project1\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="game_state_play.cpp">
+    <ClCompile Include="project1\entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="texture_manager.cpp">
+    <ClCompile Include="project1\game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="animation_handler.cpp">
+    <ClCompile Include="project1\game_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="camera.cpp">
+    <ClCompile Include="project1\game_state_play.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="entity.cpp">
+    <ClCompile Include="project1\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tile.cpp">
+    <ClCompile Include="project1\map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tile_manager.cpp">
+    <ClCompile Include="project1\texture_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="layer.cpp">
+    <ClCompile Include="project1\tile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="map.cpp">
+    <ClCompile Include="project1\tile_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="project1\layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game_state.h">
+    <ClInclude Include="project1\animation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game.h">
+    <ClInclude Include="project1\animation_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game_state_play.h">
+    <ClInclude Include="project1\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="texture_manager.h">
+    <ClInclude Include="project1\entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="animation_handler.h">
+    <ClInclude Include="project1\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="animation.h">
+    <ClInclude Include="project1\game_state.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
+    <ClInclude Include="project1\game_state_play.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="entity.h">
+    <ClInclude Include="project1\map.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="player.h">
+    <ClInclude Include="project1\player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tile.h">
+    <ClInclude Include="project1\texture_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tile_manager.h">
+    <ClInclude Include="project1\tile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="layer.h">
+    <ClInclude Include="project1\tile_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="map.h">
+    <ClInclude Include="project1\nlohmann\json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\character_atlas.json">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\overworld_atlas.json">
-      <Filter>Resource Files</Filter>
-    </None>
+    <ClInclude Include="project1\layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

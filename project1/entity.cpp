@@ -2,7 +2,7 @@
 #include <iostream>
 
 Entity::Entity() :
-	speed(200.f),
+	speed(150.f),
 	width(16),
 	height(32) {}
 
