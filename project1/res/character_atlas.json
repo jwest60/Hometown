@@ -1,4 +1,11 @@
 {
+    "bbox": {
+        "type": "bbox",
+        "width": 10,
+        "height": 4,
+        "left": 3,
+        "top":  22
+    },
     "down": {
         "type": "animation",
         "width": 64,

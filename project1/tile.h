@@ -17,6 +17,8 @@ public:
 
 	Tile(ID id, const sf::Texture& tex, const sf::IntRect& tex_rect, unsigned int tile_size, bool solid);
 
+	Tile& operator=(const Tile& rhs);
+
 	ID id;
 
 	bool solid;

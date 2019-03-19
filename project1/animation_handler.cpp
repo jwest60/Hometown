@@ -41,7 +41,7 @@ void Animation_Handler::create_animations(const sf::Texture& sprite, const std::
 
 		Animation anim(rect, name, frames, 0.2);
 
-		animations[it.key()] = anim;
+		animations[name] = anim;
 	}
 
 	return;
