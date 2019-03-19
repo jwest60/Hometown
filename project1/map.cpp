@@ -31,11 +31,10 @@ void Map::generate()
 	this->clear();
 
 	auto& tiles1 = this->create_layer();
-	auto& tiles2 = this->create_layer();
-
 	tiles1->flood_fill(this->t_manager.get_tile("grass"));
 	tiles1->set_tile_positions();
 
+	auto& tiles2 = this->create_layer();
 	tiles2->place_tile(this->t_manager.get_tile("rock"), sf::Vector2i(2, 2));
 	tiles2->set_tile_positions();
 }
