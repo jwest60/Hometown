@@ -18,7 +18,10 @@ void Game_State_Play::update(const float dt)
 	this->player.update_sprite(dt);
 	this->camera.update(dt);
 
-	std::cout << int(1 / dt) << std::endl;
+	auto bounds = this->player.get_entity_bounds();
+
+	// std::cout << bounds.left << '\t' << bounds.top << '\n';
+	// std::cout << int(1 / dt) << std::endl;
 
 	return;
 }
@@ -39,7 +42,9 @@ void Game_State_Play::handle_input(const float dt)
 		}
 	}
 
-	player.get_input(dt);
+	sf::Vector2f move = this->player.get_movement(dt);
+	sf::Vector2f new_pos = this->cols.entity_adjust_position(move, this->player.get_entity_bounds());
+	this->player.move(new_pos);
 }
 
 void Game_State_Play::load_textures()
@@ -53,7 +58,7 @@ void Game_State_Play::set_textures()
 	this->player.set_texture(this->tex_mgr.get_texture("player"), "res/character_atlas.json");
 }
 
-Game_State_Play::Game_State_Play(Game* game) : map(20, 20, 16)
+Game_State_Play::Game_State_Play(Game* game) : map(20, 20, 16), cols(20, 20, 16)
 {
 	this->game = game;
 	this->camera.set_size(sf::Vector2f(400.f, 300.f));

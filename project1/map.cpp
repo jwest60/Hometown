@@ -1,7 +1,10 @@
 #include "map.h"
 
 Map::Map(const unsigned int width, const unsigned int height, const unsigned int tile_size)
-	: width(width), height(height), tile_size(tile_size) {}
+	: width(width), height(height), tile_size(tile_size) 
+{
+	this->collisions.resize(width * height, 0);
+}
 
 void Map::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
@@ -35,7 +38,7 @@ void Map::generate()
 	tiles1->set_tile_positions();
 
 	auto& tiles2 = this->create_layer();
-	tiles2->place_tile(this->t_manager.get_tile("rock"), sf::Vector2i(2, 2));
+	tiles2->place_tile(this->t_manager.get_tile("rock"), sf::Vector2i(10, 10));
 	tiles2->set_tile_positions();
 }
 

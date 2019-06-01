@@ -30,6 +30,9 @@ void Animation_Handler::create_animations(const sf::Texture& sprite, const std::
 	for (json::iterator it = j.begin(); it != j.end(); ++it)
 	{
 		std::string name = it.key();
+		std::string type = it->find("type").value();
+
+		if (type != "animation") continue;
 
 		unsigned int left = it->find("left").value();
 		unsigned int top = it->find("top").value();

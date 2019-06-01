@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="animation_handler.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="collision_system.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_state_play.cpp" />
     <ClCompile Include="main.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="animation.h" />
     <ClInclude Include="animation_handler.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="collision_system.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="game_state_play.h" />

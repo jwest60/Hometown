@@ -5,6 +5,7 @@
 #include "camera.h"
 #include "tile_manager.h"
 #include "map.h"
+#include "collision_system.h"
 
 class Game_State_Play : public Game_State
 {
@@ -22,6 +23,8 @@ public:
 	
 	void load_textures();
 	void set_textures();
+
+	Collision_System cols;
 
 private:
 
