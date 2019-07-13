@@ -14,9 +14,14 @@ public:
 	sf::Texture& get_texture(const std::string& name);
 	void remove_texture(const std::string& name);
 
+	void create_font(const std::string& name, const std::string& file_name);
+	sf::Font& get_font(const std::string& name);
+
 	Texture_Manager();
 
 private:
 
 	std::map<std::string, sf::Texture> textures;
+
+	std::map<std::string, sf::Font> fonts;
 };

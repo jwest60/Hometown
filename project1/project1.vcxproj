@@ -160,10 +160,15 @@
     <ClCompile Include="collision_system.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_state_play.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="gui_component.cpp" />
+    <ClCompile Include="inventory.cpp" />
+    <ClCompile Include="item_atlas.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="layer.cpp" />
     <ClCompile Include="map.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="texture_manager.cpp" />
     <ClCompile Include="tile.cpp" />
     <ClCompile Include="tile_manager.cpp" />
@@ -177,6 +182,10 @@
     <ClInclude Include="game_state.h" />
     <ClInclude Include="game_state_play.h" />
     <ClInclude Include="entity.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="gui_component.h" />
+    <ClInclude Include="inventory.h" />
+    <ClInclude Include="item_atlas.h" />
     <ClInclude Include="layer.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="player.h" />
@@ -185,6 +194,7 @@
     <ClInclude Include="tile_manager.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="item_atlas.json" />
     <None Include="res\character_atlas.json" />
     <None Include="res\overworld_atlas.json" />
   </ItemGroup>

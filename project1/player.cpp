@@ -1,11 +1,16 @@
 #include "player.h"
 
-Player::Player()
+sf::Vector2f Player::get_movement(const float dt)
 {
-	this->speed = 200.f;
-	this->width = 16;
-	this->height = 32;
-	this->tile_size = 16;
+	int h_move = sf::Keyboard::isKeyPressed(sf::Keyboard::D)
+		- sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+	int v_move = sf::Keyboard::isKeyPressed(sf::Keyboard::S)
+		- sf::Keyboard::isKeyPressed(sf::Keyboard::W);
 
-	this->bbox = sf::IntRect(0, 0, this->width, this->height);
+	return sf::Vector2f(h_move * this->speed * dt, v_move * this->speed * dt);
+}
+
+void Player::get_input()
+{
+	
 }

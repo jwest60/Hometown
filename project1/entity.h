@@ -16,7 +16,6 @@ public:
 
 	void move(const sf::Vector2f& pos);
 	sf::Vector2f get_center() { return this->sprite.getPosition(); }
-	sf::Vector2f get_movement(const float dt);
 
 	void set_texture(sf::Texture& tex, const std::string& atlas_name);
 	void update_sprite(const float dt);
@@ -27,7 +26,7 @@ public:
 
 	sf::FloatRect get_entity_bounds();
 
-private:
+protected:
 
 	sf::Sprite sprite;
 

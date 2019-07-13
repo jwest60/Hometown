@@ -6,6 +6,8 @@
 #include "tile_manager.h"
 #include "map.h"
 #include "collision_system.h"
+#include "gui.h"
+#include "inventory.h"
 
 class Game_State_Play : public Game_State
 {
@@ -23,8 +25,11 @@ public:
 	
 	void load_textures();
 	void set_textures();
+	void set_gui();
 
 	Collision_System cols;
+
+	Gui gui;
 
 private:
 
