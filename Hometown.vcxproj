@@ -18,6 +18,50 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\button.cpp" />
+    <ClCompile Include="src\animation_handler.cpp" />
+    <ClCompile Include="src\camera.cpp" />
+    <ClCompile Include="src\collision_system.cpp" />
+    <ClCompile Include="src\entity.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\game_state_menu.cpp" />
+    <ClCompile Include="src\game_state_play.cpp" />
+    <ClCompile Include="src\gui.cpp" />
+    <ClCompile Include="src\gui_component.cpp" />
+    <ClCompile Include="src\item_atlas.cpp" />
+    <ClCompile Include="src\layer.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\map.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\texture_manager.cpp" />
+    <ClCompile Include="src\text_button.cpp" />
+    <ClCompile Include="src\tile.cpp" />
+    <ClCompile Include="src\tile_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\animation.hpp" />
+    <ClInclude Include="include\animation_handler.hpp" />
+    <ClInclude Include="include\camera.hpp" />
+    <ClInclude Include="include\collision_system.hpp" />
+    <ClInclude Include="include\entity.hpp" />
+    <ClInclude Include="include\game.hpp" />
+    <ClInclude Include="include\game_state.hpp" />
+    <ClInclude Include="include\game_state_menu.hpp" />
+    <ClInclude Include="include\game_state_play.hpp" />
+    <ClInclude Include="include\gui.hpp" />
+    <ClInclude Include="include\gui_component.hpp" />
+    <ClInclude Include="include\item_atlas.hpp" />
+    <ClInclude Include="include\layer.hpp" />
+    <ClInclude Include="include\map.hpp" />
+    <ClInclude Include="include\player.hpp" />
+    <ClInclude Include="include\texture_manager.hpp" />
+    <ClInclude Include="include\text_button.hpp" />
+    <ClInclude Include="include\tile.hpp" />
+    <ClInclude Include="include\tile_manager.hpp" />
+    <ClInclude Include="nlohmann\json.hpp" />
+    <ClInclude Include="include\button.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{6878566C-12C8-42A4-8A3D-9BA145D2A02F}</ProjectGuid>
@@ -103,36 +147,6 @@
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="project1\animation_handler.cpp" />
-    <ClCompile Include="project1\camera.cpp" />
-    <ClCompile Include="project1\entity.cpp" />
-    <ClCompile Include="project1\game.cpp" />
-    <ClCompile Include="project1\game_state.cpp" />
-    <ClCompile Include="project1\game_state_play.cpp" />
-    <ClCompile Include="project1\layer.cpp" />
-    <ClCompile Include="project1\main.cpp" />
-    <ClCompile Include="project1\map.cpp" />
-    <ClCompile Include="project1\texture_manager.cpp" />
-    <ClCompile Include="project1\tile.cpp" />
-    <ClCompile Include="project1\tile_manager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="project1\animation.h" />
-    <ClInclude Include="project1\animation_handler.h" />
-    <ClInclude Include="project1\camera.h" />
-    <ClInclude Include="project1\entity.h" />
-    <ClInclude Include="project1\game.h" />
-    <ClInclude Include="project1\game_state.h" />
-    <ClInclude Include="project1\game_state_play.h" />
-    <ClInclude Include="project1\layer.h" />
-    <ClInclude Include="project1\map.h" />
-    <ClInclude Include="project1\nlohmann\json.hpp" />
-    <ClInclude Include="project1\player.h" />
-    <ClInclude Include="project1\texture_manager.h" />
-    <ClInclude Include="project1\tile.h" />
-    <ClInclude Include="project1\tile_manager.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

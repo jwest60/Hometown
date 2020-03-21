@@ -1,99 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
-    </Filter>
+    <ClCompile Include="src\animation_handler.cpp" />
+    <ClCompile Include="src\camera.cpp" />
+    <ClCompile Include="src\collision_system.cpp" />
+    <ClCompile Include="src\entity.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\game_state_play.cpp" />
+    <ClCompile Include="src\gui.cpp" />
+    <ClCompile Include="src\gui_component.cpp" />
+    <ClCompile Include="src\layer.cpp" />
+    <ClCompile Include="src\item_atlas.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\map.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\texture_manager.cpp" />
+    <ClCompile Include="src\tile.cpp" />
+    <ClCompile Include="src\tile_manager.cpp" />
+    <ClCompile Include="src\game_state_menu.cpp" />
+    <ClCompile Include="src\button.cpp" />
+    <ClCompile Include="src\text_button.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="project1\animation_handler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\entity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\game_state.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\game_state_play.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\map.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\texture_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\tile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\tile_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="project1\layer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="include\animation.hpp" />
+    <ClInclude Include="include\animation_handler.hpp" />
+    <ClInclude Include="include\camera.hpp" />
+    <ClInclude Include="include\collision_system.hpp" />
+    <ClInclude Include="include\entity.hpp" />
+    <ClInclude Include="include\game.hpp" />
+    <ClInclude Include="include\game_state.hpp" />
+    <ClInclude Include="include\game_state_play.hpp" />
+    <ClInclude Include="include\gui.hpp" />
+    <ClInclude Include="include\gui_component.hpp" />
+    <ClInclude Include="include\item_atlas.hpp" />
+    <ClInclude Include="include\layer.hpp" />
+    <ClInclude Include="include\map.hpp" />
+    <ClInclude Include="include\player.hpp" />
+    <ClInclude Include="include\texture_manager.hpp" />
+    <ClInclude Include="include\tile.hpp" />
+    <ClInclude Include="include\tile_manager.hpp" />
+    <ClInclude Include="nlohmann\json.hpp" />
+    <ClInclude Include="include\game_state_menu.hpp" />
+    <ClInclude Include="include\button.hpp" />
+    <ClInclude Include="include\text_button.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="project1\animation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\animation_handler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\entity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\game_state.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\game_state_play.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\map.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\texture_manager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\tile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\tile_manager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\nlohmann\json.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="project1\layer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Filter Include="src">
+      <UniqueIdentifier>{9e69881c-b803-4b10-8266-1ef9fa27d1d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
